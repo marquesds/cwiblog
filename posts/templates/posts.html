@@ -1,0 +1,10 @@
+<html>
+  <body>
+    {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <small>{{ post.created_at }}</small><br>
+    <small>Author: {{ post.author }}</small>
+    <p>{{ post.text }}</p>
+    {% endfor %}
+  </body>
+</html>
